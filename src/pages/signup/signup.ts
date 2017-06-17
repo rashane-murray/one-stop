@@ -3,7 +3,6 @@ import { NavController, ToastController } from 'ionic-angular';
 
 import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
-
 import { TranslateService } from '@ngx-translate/core';
 
 
@@ -12,15 +11,12 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: 'signup.html'
 })
 export class SignupPage {
-  // The account fields for the login form.
-  // If you're using the username field with or without email, make
-  // sure to add it to the type
-  account: { name: string, email: string, password: string } = {
-    name: 'Test Human',
-    email: 'test@example.com',
-    password: 'test'
-  };
 
+  /** The account fields for the login form.
+  *   If you're using the username field with or without email, make
+  *   sure to add it to the type
+  */
+  
   // Our translated text strings
   private signupErrorString: string;
 
@@ -32,12 +28,23 @@ export class SignupPage {
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
     })
-  }
+  };
 
+  account: { username: string, fname: string,lname: string, email: string, password: string , phone: string} = {
+    username: '',
+    fname: '',
+    lname: '',
+    email: '',
+    password: '',
+    phone:'',
+  };
+
+  
   doSignup() {
-    // Attempt to login in through our User service
+    // Attempt to login in through the User service
     this.user.signup(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
+      console.log(this.account)
     }, (err) => {
 
       this.navCtrl.push(MainPage); // TODO: Remove this when you add your signup endpoint

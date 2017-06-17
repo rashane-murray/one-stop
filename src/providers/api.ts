@@ -3,8 +3,9 @@ import { Http, RequestOptions, URLSearchParams } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 /**
- * Api is a generic REST Api handler. Set your API url first.
+ *  Api is a generic REST Api handler. Set your API url first.
  */
+
 @Injectable()
 export class Api {
   url: string = 'https://example.com/api/v1';

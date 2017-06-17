@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { ItemDetailPage } from '../item-detail/item-detail';
+import { TripPage } from '../trip-detail/trip-detail';
 
 import { Item } from '../../models/item';
 
@@ -19,7 +19,7 @@ export class SearchPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public items: Items) { }
 
   /**
-   * Perform a service for the proper items.
+   *   Perform a service for the proper items.
    */
   getItems(ev) {
     let val = ev.target.value;
@@ -36,7 +36,7 @@ export class SearchPage {
    * Navigate to the detail page for this item.
    */
   openItem(item: Item) {
-    this.navCtrl.push(ItemDetailPage, {
+    this.navCtrl.push(TripPage, {
       item: item
     });
   }
