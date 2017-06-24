@@ -1,6 +1,6 @@
 # ONE-STOP 
 
-<img src="/src/assests/img/taxi.png" width="400" />
+<img src="/src/assests/img/taxi.png" width="200" />
 
 ## Description
 
@@ -19,7 +19,11 @@ One-stop app seeks to prives Jamaicans with a simple and safe way to 'Hail a cab
 To run this app, install the latest version of the Ionic CLI and clone the repo:
 
 ```bash
-git clone <repo>
+git clone https://github.com/superrcoop/one-stop.git
+```
+
+```bash
+git cd one-stop
 ```
 
 then run:

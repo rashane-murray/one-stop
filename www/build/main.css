@@ -27485,10 +27485,6 @@ page-item-create .profile-image-wrapper .profile-image-placeholder ion-icon {
   margin-top: 10px;
 }
 
-ion-app._gmaps_cdv_ .nav-decor {
-  background-color: transparent !important;
-}
-
 page-map #map {
   width: 100%;
   height: 100%;
@@ -27539,7 +27535,7 @@ page-welcome .splash-bg {
 page-welcome .splash-info {
   position: relative;
   z-index: 2;
-  margin-top: -64px;
+  margin-top: -60px;
   text-align: center;
 }
 
@@ -27559,7 +27555,7 @@ page-welcome .splash-intro {
 }
 
 page-welcome button.loginFb {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: white;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   color: #333;
@@ -27570,7 +27566,7 @@ page-welcome button.loginFb.activated {
 }
 
 page-welcome button.loginGoogle {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: white;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   color: #333;
@@ -27581,7 +27577,7 @@ page-welcome button.loginGoogle.activated {
 }
 
 page-welcome button.signIn {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: white;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   color: #333;
@@ -27592,7 +27588,7 @@ page-welcome button.signIn.activated {
 }
 
 page-welcome button.signUp {
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: #87a9f2;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   color: #333;

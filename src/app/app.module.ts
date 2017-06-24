@@ -26,6 +26,7 @@ import { Settings } from '../providers/settings';
 import { User } from '../providers/user';
 
 import { Camera } from '@ionic-native/camera';
+import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -44,7 +45,7 @@ export function HttpLoaderFactory(http: Http) {
 export function provideSettings(storage: Storage) {
   /**
   *   The Settings provider takes a set of default settings for your app.
-  *   You can add new settings options at any time. Once the settings ar saved,
+  *   You can add new settings options at any time. Once the settings are saved,
   *   these values will not overwrite the saved values (this can be done manually if
   *   desired).
   */
@@ -93,6 +94,7 @@ export function providers() {
     Items,
     User,
     Camera,
+    Geolocation,
     GoogleMaps,
     SplashScreen,
     StatusBar,
