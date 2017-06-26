@@ -27485,6 +27485,11 @@ page-item-create .profile-image-wrapper .profile-image-placeholder ion-icon {
   margin-top: 10px;
 }
 
+page-map {
+  opacity: 0;
+  transition: opacity 150ms ease-in;
+}
+
 page-map #map {
   width: 100%;
   height: 100%;

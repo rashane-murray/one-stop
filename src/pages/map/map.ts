@@ -16,11 +16,15 @@ export class MapPage {
   @ViewChild('map') mapEle;
   map:any;
   position:any;
+  marker:any;
+  content:any;
+  latLng:any;
 
   constructor(private googleMaps: GoogleMaps, public navCtrl: NavController, public platform: Platform, public geolocation: Geolocation) { }
 
   ionViewDidLoad(){
     this.loadMap();
+
   }
 
   loadMap() {
@@ -34,21 +38,43 @@ export class MapPage {
 
     //let TAXI: LatLng = ...
     this.geolocation.getCurrentPosition().then((position)=>{
-        let latLng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+        this.latLng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 
         let mapOptions = {
-            center: latLng, //TAXI
-            zoom: 50,
+            center: this.latLng, //TAXI
+            zoom: 15,
             mapTypeId:google.maps.MapTypeId.ROADMAP
 
         }
 
-    this.map= new google.maps.Map(this.mapEle.nativeElement,mapOptions);
+    this.map=new google.maps.Map(this.mapEle.nativeElement,mapOptions);
     },(err) =>{
         console.log(err);
         });
+    
+    this.addMarker();   
     }
 
+    addMarker(){
+ 
+        let marker = new google.maps.Marker({
+            map: this.map,
+            animation: google.maps.Animation.DROP,
+            position: this.latLng
+        });
+ 
+        let content = "<h4>TAXI?</h4>";          
+        this.addInfoWindow(marker, content);
+    } 
+
+    addInfoWindow(marker, content){
+ 
+        let infoWindow = new google.maps.InfoWindow({
+            content: content
+        });
+ 
+        infoWindow.open(this.map, marker);
+    }
 }
 
 
