@@ -19,14 +19,14 @@ One-stop app seeks to prives Jamaicans with a simple and safe way to 'Hail a cab
 To run this app, install the latest version of the Ionic CLI and clone the repo:
 
 ```bash
-git clone https://github.com/superrcoop/one-stop.git
+git clone https://github.com/PalisadoesFoundation/one-stop.git
 ```
 
 ```bash
 git cd one-stop
 ```
 
-then run:
+then run (in web browser):
 
 
 ```bash
@@ -35,20 +35,19 @@ npm run ionic:serve --lab
 
 ## Pages
 
-The app loads with the `WelcomePage` where the user will signup,sigin or login through Facebook or Google+. Once the user is authenticated, the app will load with the `MainPage` which is set to be the `TabsPage` as the default.
+The app loads with the `WelcomePage` where the user will register or login. Once the user is authenticated, the app will load with the `MainPage` which is set to be the `TabsPage` as the default, displaying recent visits, search and settings.
 
-The entry and main pages can be configured easily by updating the corresponding variables in [src/pages/pages.ts](https://github.com/driftyco/ionic-starter-super/blob/master/src/pages/pages.ts).
+The entry and main pages can be configured easily by updating the corresponding variables in `src/pages/pages.ts`
 
-Please read the [Pages](https://github.com/driftyco/ionic-starter-super/tree/master/src/pages) readme, and the readme for each page in the source for more documentation on each.
+Please read the readme for each page in the source for more documentation on each.
 
 ## Usage
 
 You can easily navigate through the apps pages to test its functionality and user experience by tapping on respective locations and input from your ios/android/windows keyboard.
 
-
 ## Providers
 
-One-Stop comes with some basic implementations of common providers.
+One-Stop comes with some basic implementations of common providers:
 
 ### User
 
