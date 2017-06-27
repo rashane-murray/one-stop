@@ -1,6 +1,6 @@
 # ONE-STOP 
 
-<img src="one-stop/src/assests/img/taxi.png" width="200" />
+<img src="src/assets/img/taxi.png" width="200" />
 
 ## Description
 
