@@ -8,48 +8,48 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
+    "name": "Burt Tomas",
     "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "about": "estimated time of arrival",
   };
 
 
   constructor(public http: Http) {
     let items = [
       {
-        "name": "Burt ",
+        "name": "Nelson - 32 Ridgeway dr",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Online"
+        "about": "3 mins away"
       },
       {
-        "name": "Charlie ",
+        "name": "Charlie - 16 Birdsucker Lane ",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Online"
+        "about": "10 mins away"
       },
       {
-        "name": "Donald ",
+        "name": "Donald -23 Macjix ave",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Offline"
+        "about": "17 mins away"
       },
       {
-        "name": "Eva ",
+        "name": "Eva - 553 Halfway Tree rd",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Offline"
+        "about": "58 mins away"
       },
       {
-        "name": "Ellie",
+        "name": "Ellie - Portmore Mall",
         "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Online"
+        "about": "79 away"
       },
       {
-        "name": "Molly ",
+        "name": "Molly - Highway 53",
         "profilePic": "assets/img/speakers/mouse.jpg",
         "about": "Away"
       },
       {
-        "name": "Paul ",
+        "name": "Paul - 21 higbury dr",
         "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Away"
+        "about": "Offline"
       }
     ];
 

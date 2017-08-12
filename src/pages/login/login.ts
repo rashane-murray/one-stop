@@ -22,7 +22,7 @@ export class LoginPage {
     password: 'test'
   }; 
 
-  // Our translated text strings
+  //Our translated text strings
   private loginErrorString: string;
 
   constructor(public http: Http,public navCtrl: NavController,public user: User,public toastCtrl: ToastController,public translateService: TranslateService) {
@@ -37,7 +37,7 @@ export class LoginPage {
 
       let headers = new Headers();
       headers.append("content-type", "application/json");
-      let log = { name: "oneStop", email, password};
+      let log = { name: "oneStop", email: this.account.email, password: this.account.password};
       this.http.post("http://localhost:3000/mdl/api/v1/mobile/post/login/rider",
         JSON.stringify(log),
         { headers: headers }
@@ -56,6 +56,7 @@ export class LoginPage {
       });
       toast.present(); 
     
-  }
+  });
   this.navCtrl.push(MainPage);
+}
 }

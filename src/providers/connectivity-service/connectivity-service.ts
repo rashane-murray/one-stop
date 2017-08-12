@@ -9,6 +9,8 @@ declare var Connection;
 @Injectable()
 export class ConnectivityServiceProvider {
 
+onDevice:boolean;
+
   constructor(public platform: Platform, public network: Network) {
     console.log('Hello ConnectivityServiceProvider Provider');
     this.onDevice = this.platform.is('cordova');

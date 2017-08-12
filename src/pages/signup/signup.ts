@@ -40,11 +40,11 @@ export class SignupPage {
 headers.append("content-type", "application/json");
 let info = {
       name: "oneStop",
-      fname: account.fname,
-      lname: account.lname,
-      email: account.email,
-      password: account.password,
-      phone: account.phone,
+      fname: this.account.fname,
+      lname: this.account.lname,
+      email: this.account.email,
+      password: this.account.password,
+      phone: this.account.phone,
       utc_timestamp: "14000000"
     };
 

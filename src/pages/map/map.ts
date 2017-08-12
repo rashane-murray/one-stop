@@ -1,7 +1,8 @@
 import { Component, ViewChild,ElementRef } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { Items } from '../../providers/providers';
+import { Item } from '../../models/item';
 import {  GoogleMaps, GoogleMap, GoogleMapsEvent, LatLng, CameraPosition, MarkerOptions, Marker } from '@ionic-native/google-maps';
 
 declare var google: any;
@@ -24,6 +25,7 @@ export class MapPage {
 
   ionViewDidLoad(){
     this.loadMap();
+    this.addMarker();
 
   }
 

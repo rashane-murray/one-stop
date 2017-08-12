@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { LocationSelectPage } from './location-select';
+import { LocationSelect } from '../location-select/location-select';
 
 @NgModule({
   declarations: [
