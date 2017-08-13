@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 
 declare var Connection;
 @Injectable()
-export class ConnectivityServiceProvider {
+export class Connectivity {
 
 onDevice:boolean;
 

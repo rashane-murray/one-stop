@@ -11,6 +11,7 @@ export class Items {
     "name": "Burt Tomas",
     "profilePic": "assets/img/speakers/bear.jpg",
     "about": "estimated time of arrival",
+    "location": {lat: 37.768, lng: -122.511}
   };
 
 
@@ -19,37 +20,44 @@ export class Items {
       {
         "name": "Nelson - 32 Ridgeway dr",
         "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "3 mins away"
+        "about": "3 mins away",
+        "location": {lat: 30.768, lng: -170.511}
       },
       {
         "name": "Charlie - 16 Birdsucker Lane ",
         "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "10 mins away"
+        "about": "10 mins away",
+        "location": {lat: 35.998, lng: -169.711}
       },
       {
         "name": "Donald -23 Macjix ave",
         "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "17 mins away"
+        "about": "17 mins away",
+        "location": {lat: 39.768, lng: -162.511}
       },
       {
         "name": "Eva - 553 Halfway Tree rd",
         "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "58 mins away"
+        "about": "58 mins away",
+        "location": {lat: 33.768, lng: -166.511}
       },
       {
         "name": "Ellie - Portmore Mall",
         "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "79 away"
+        "about": "79 away",
+        "location": {lat: 35.648, lng: -161.671}
       },
       {
         "name": "Molly - Highway 53",
         "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Away"
+        "about": "Away",
+        "location": {lat: 35.228, lng: -122.451}
       },
       {
         "name": "Paul - 21 higbury dr",
         "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Offline"
+        "about": "Offline",
+        "location": {lat: 31.738, lng: -152.453}
       }
     ];
 

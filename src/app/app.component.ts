@@ -14,9 +14,10 @@ import { SettingsPage } from '../pages/settings/settings';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
-
+import { LocationSelect } from '../pages/location-select/location-select';
 import { Settings } from '../providers/providers';
 import { TranslateService } from '@ngx-translate/core'
+
 
 @Component({
   template: 
@@ -51,7 +52,8 @@ export class MyApp {
     { title: 'Recent', component: RecentPage },
     { title: 'Menu', component: MenuPage },
     { title: 'Settings', component: SettingsPage },
-    { title: 'Search', component: SearchPage }
+    { title: 'Search', component: SearchPage },
+    { title: 'Location-select', component: LocationSelect }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, statusBar: StatusBar, splashScreen: SplashScreen) {

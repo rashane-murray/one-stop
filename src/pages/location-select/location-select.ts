@@ -1,7 +1,7 @@
 import { NavController, Platform, ViewController } from 'ionic-angular';
 import { Component, ElementRef, ViewChild, NgZone } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
-import { GoogleMapsProvider } from '../../providers/google-maps';
+import { GoogleMapsProvider } from '../../providers/google-maps/google-maps';
  
 @Component({
   selector: 'page-location-select',
@@ -22,7 +22,7 @@ export class LocationSelect {
     saveDisabled: boolean;
     location: any;  
  
-    constructor(public navCtrl: NavController, public zone: NgZone, public maps: GoogleMaps, public platform: Platform, public geolocation: Geolocation, public viewCtrl: ViewController) {
+    constructor(public navCtrl: NavController, public zone: NgZone, public maps: GoogleMapsProvider, public platform: Platform, public geolocation: Geolocation, public viewCtrl: ViewController) {
         this.searchDisabled = true;
         this.saveDisabled = true;
     }

@@ -4,13 +4,13 @@ import { LocationSelect } from '../location-select/location-select';
 
 @NgModule({
   declarations: [
-    LocationSelectPage,
+    LocationSelect,
   ],
   imports: [
-    IonicPageModule.forChild(LocationSelectPage),
+    IonicPageModule.forChild(LocationSelect),
   ],
   exports: [
-    LocationSelectPage
+    LocationSelect
   ]
 })
 export class LocationSelectPageModule {}

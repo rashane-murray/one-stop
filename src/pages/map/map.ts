@@ -15,6 +15,7 @@ declare var navigaton:any;
 export class MapPage {
   
   @ViewChild('map') mapEle;
+  @ViewChild('directionsPanel') directionsPanel;
   map:any;
   position:any;
   marker:any;
@@ -26,6 +27,7 @@ export class MapPage {
   ionViewDidLoad(){
     this.loadMap();
     this.addMarker();
+    this.startNavigating();
 
   }
 
@@ -65,7 +67,7 @@ export class MapPage {
             position: this.latLng
         });
  
-        let content = "<h4>TAXI?</h4>";          
+        let content = "<h4>Location</h4>";          
         this.addInfoWindow(marker, content);
     } 
 
@@ -77,6 +79,31 @@ export class MapPage {
  
         infoWindow.open(this.map, marker);
     }
-}
+
+    startNavigating(){
+    let directionsService = new google.maps.DirectionsService;
+        let directionsDisplay = new google.maps.DirectionsRenderer;
+ 
+        directionsDisplay.setMap(this.map);
+        directionsDisplay.setPanel(this.directionsPanel.nativeElement);
+ 
+        directionsService.route({
+            origin: {lat: 37.77, lng: -122.447},
+destination: {lat: 37.768, lng: -122.511},
+            travelMode: google.maps.TravelMode['DRIVING']
+        }, (res, status) => {
+ 
+            if(status == google.maps.DirectionsStatus.OK){
+                directionsDisplay.setDirections(res);
+            } else {
+                console.warn(status);
+            }
+ 
+        });
+ 
+    }
+
+    }
+
 
 
