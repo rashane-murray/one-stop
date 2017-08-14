@@ -19,6 +19,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { LocationSelect } from '../pages/location-select/location-select';
+
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -28,6 +30,9 @@ import { User } from '../providers/user';
 import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps } from '@ionic-native/google-maps';
+import { Network } from '@ionic-native/network';
+import { Connectivity } from '../providers/connectivity-service/connectivity-service';
+import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 //import { GoogleAuth, User } from '@ionic/cloud-angular';
@@ -77,7 +82,8 @@ let pages = [
   SettingsPage,
   SignupPage,
   TabsPage,
-  WelcomePage
+  WelcomePage,
+  LocationSelect
 ];
 
 export function declarations() {
@@ -94,6 +100,9 @@ export function providers() {
     Items,
     User,
     Camera,
+    Connectivity,
+    GoogleMapsProvider,
+    Network,
     Geolocation,
     GoogleMaps,
     SplashScreen,

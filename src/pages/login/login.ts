@@ -4,6 +4,7 @@ import { NavController, ToastController } from 'ionic-angular';
 import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
 import { TranslateService } from '@ngx-translate/core';
+import { Http, Headers } from "@angular/http";
 //import { GoogleAuth, User } from '@ionic/cloud-angular';
 
 @Component({
@@ -15,32 +16,47 @@ export class LoginPage {
    If you're using the username field with or without email, make
    sure to add it to the type
    */ 
+    posts:any;
     account: { email: string, password: string } = {
     email: 'test@example.com',
     password: 'test'
   }; 
 
-  // Our translated text strings
+  //Our translated text strings
   private loginErrorString: string;
 
-  constructor(public navCtrl: NavController,public user: User,public toastCtrl: ToastController,public translateService: TranslateService) {
+  constructor(public http: Http,public navCtrl: NavController,public user: User,public toastCtrl: ToastController,public translateService: TranslateService) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
     })
   }
 
-  // Attempt to login in through our User service
+  //User authentication
   doLogin() {
-      this.navCtrl.push(MainPage);
-      
-      /* Unable to log in
+
+      let headers = new Headers();
+      headers.append("content-type", "application/json");
+      let log = { name: "oneStop", email: this.account.email, password: this.account.password};
+      this.http.post("http://localhost:3000/mdl/api/v1/mobile/post/login/rider",
+        JSON.stringify(log),
+        { headers: headers }
+      )
+      .subscribe(
+        data => {
+        this.posts = data;
+        
+      },
+      err=>{
+          
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
         duration: 3000,
         position: 'top'
       });
-      toast.present(); */
+      toast.present(); 
     
-  }
+  });
+  this.navCtrl.push(MainPage);
+}
 }
