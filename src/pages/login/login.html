@@ -8,12 +8,12 @@
 
 
 <ion-content>
-  <form (submit)="doLogin()">
+  <form (submit)="login(useracc)">
     <ion-list>
 
       <ion-item>
         <ion-label stacked >{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
+        <ion-input type="email" [(ngModel)]="useracc.email" name="email"></ion-input>
       </ion-item>
 
       <!--
@@ -21,13 +21,13 @@
 
       <ion-item>
         <ion-label stacked >{{ 'USERNAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username"></ion-input>
+        <ion-input type="text" [(ngModel)]="useracc.username"></ion-input>
       </ion-item>
       -->
 
       <ion-item>
         <ion-label stacked >{{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="useracc.password" name="password"></ion-input>
       </ion-item>
 
       <div padding>

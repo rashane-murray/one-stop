@@ -20,7 +20,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LocationSelect } from '../pages/location-select/location-select';
-
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule } from "angularfire2/auth";
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -39,7 +40,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { FIREBASE_CONFIG } from "./app.firebase.config";
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
 
@@ -120,6 +121,8 @@ export function providers() {
   imports: [
     BrowserModule,
     HttpModule,
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
