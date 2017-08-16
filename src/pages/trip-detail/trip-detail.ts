@@ -14,4 +14,6 @@ export class TripPage {
     this.trip = navParams.get('item') || items.defaultItem;
   }
 
+
+
 }
