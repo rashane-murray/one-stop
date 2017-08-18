@@ -22,6 +22,8 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { LocationSelect } from '../pages/location-select/location-select';
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
+import { AngularFireDatabase } from "angularfire2/database";
+import { FirebaseListObservable } from "angularfire2/database";
 
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
@@ -36,6 +38,7 @@ import { Connectivity } from '../providers/connectivity-service/connectivity-ser
 import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { DriverLocationProvider } from '../providers/driver-location/driver-location';
 //import { GoogleAuth, User } from '@ionic/cloud-angular';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -108,6 +111,8 @@ export function providers() {
     GoogleMaps,
     SplashScreen,
     StatusBar,
+    DriverLocationProvider, 
+    AngularFireDatabase,
 
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     

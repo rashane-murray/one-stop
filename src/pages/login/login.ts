@@ -59,7 +59,7 @@ export class LoginPage {
           
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
-        duration: 3000,
+        duration: 3000, 
         position: 'top'
       });
       toast.present(); 
