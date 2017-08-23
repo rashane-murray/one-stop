@@ -5,7 +5,8 @@ import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
 import { TranslateService } from '@ngx-translate/core';
 import { Http, Headers } from "@angular/http";
-
+import { UserAccount } from '../../models/UserAccount';
+import { AngularFireAuth } from "angularfire2/auth";
 
 @Component({
   selector: 'page-signup',
@@ -21,24 +22,26 @@ export class SignupPage {
   // Our translated text strings
   private signupErrorString: string;
   posts:any;
-
+  account: { username: string, fname: string,lname: string, email: string, password: string , phone: string};
+  useracc = {} as UserAccount;
   constructor(public http: Http,public navCtrl: NavController,
     public user: User,
     public toastCtrl: ToastController,
-    public translateService: TranslateService) {
+    public translateService: TranslateService,
+    private afAuth : AngularFireAuth) {
 
     this.translateService.get('SIGNUP_ERROR').subscribe((value) => {
       this.signupErrorString = value;
     })
   };
 
-  account: { username: string, fname: string,lname: string, email: string, password: string , phone: string};
+  
 
   
   doSignup() {
    let headers = new Headers();
-headers.append("content-type", "application/json");
-let info = {
+    headers.append("content-type", "application/json");
+    let info = {
       name: "oneStop",
       fname: this.account.fname,
       lname: this.account.lname,
@@ -70,5 +73,16 @@ let info = {
       });
       toast.present();
     });
+  }
+
+  async signUp(useracc: UserAccount){
+    try{
+      const result = await this.afAuth.auth.createUserWithEmailAndPassword(useracc.email, useracc.password);
+      if(result){
+        this.navCtrl.push(MainPage);
+      }
+    }catch(e){
+      console.error(e);
+    }
   }
 }

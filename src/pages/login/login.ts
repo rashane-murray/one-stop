@@ -5,6 +5,8 @@ import { MainPage } from '../../pages/pages';
 import { User } from '../../providers/user';
 import { TranslateService } from '@ngx-translate/core';
 import { Http, Headers } from "@angular/http";
+import { AngularFireAuth } from "angularfire2/auth";
+import { UserAccount } from "../../models/UserAccount";
 //import { GoogleAuth, User } from '@ionic/cloud-angular';
 
 @Component({
@@ -21,11 +23,17 @@ export class LoginPage {
     email: 'test@example.com',
     password: 'test'
   }; 
+  useracc = {} as UserAccount;
 
   //Our translated text strings
   private loginErrorString: string;
 
-  constructor(public http: Http,public navCtrl: NavController,public user: User,public toastCtrl: ToastController,public translateService: TranslateService) {
+  constructor(public http: Http,
+    public navCtrl: NavController,
+    public user: User,
+    public toastCtrl: ToastController,
+    public translateService: TranslateService,
+    private afAuth: AngularFireAuth) {
 
     this.translateService.get('LOGIN_ERROR').subscribe((value) => {
       this.loginErrorString = value;
@@ -51,7 +59,7 @@ export class LoginPage {
           
       let toast = this.toastCtrl.create({
         message: this.loginErrorString,
-        duration: 3000,
+        duration: 3000, 
         position: 'top'
       });
       toast.present(); 
@@ -59,4 +67,15 @@ export class LoginPage {
   });
   this.navCtrl.push(MainPage);
 }
+  async login(useracc: UserAccount){
+    try{
+      const result = this.afAuth.auth.signInWithEmailAndPassword(useracc.email, useracc.password);
+      if(result){
+        this.navCtrl.push(MainPage);
+      }
+    }catch(e){
+      console.error(e);
+    }
+  }
+  
 }

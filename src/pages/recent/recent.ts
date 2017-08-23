@@ -52,7 +52,7 @@ export class RecentPage {
    *  Navigate to the detail page for this item.
    */
   
-  openItem(item: Item) {
+  openItem(item) {
     this.navCtrl.push(TripPage, {
       item: item
     });

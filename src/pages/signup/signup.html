@@ -8,39 +8,48 @@
 
 
 <ion-content>
-  <form (submit)="doSignup()">
+  <form (submit)="signUp(useracc)">
     <ion-list>
       
+      <ion-item>
+        <ion-label stacked >{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="useracc.email" placeholder="email" name="email" required></ion-input>
+      </ion-item>
 
       <ion-item>
+        <ion-label stacked >{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="useracc.password" placeholder = "password" name="password" required ></ion-input>
+      </ion-item> 
+<!-- 
+      <ion-item>
         <ion-label stacked >{{ 'USERNAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username" placeholder="(optional)" name="username"></ion-input>
+        <ion-input type="text" [(ngModel)]="user.username" placeholder="(optional)" name="username"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked >{{ 'FIRST_NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.fname" name="fname" required ></ion-input>
+        <ion-input type="text" [(ngModel)]="user.fname" name="fname" required ></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked >{{ 'LAST_NAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.lname" name="lname" required ></ion-input>
+        <ion-input type="text" [(ngModel)]="user.lname" name="lname" required ></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked >{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email" required ></ion-input>
+        <ion-input type="email" [(ngModel)]="user.email" name="email" required ></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked >{{ 'PHONE' | translate }}</ion-label>
-        <ion-input type="tel" [(ngModel)]="account.phone" name="phone" required ></ion-input>
+        <ion-input type="tel" [(ngModel)]="user.phone" name="phone" required ></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password" required ></ion-input>
-      </ion-item>
+        <ion-input type="password" [(ngModel)]="user.password" name="password" required ></ion-input>
+      </ion-item> -->
 
       <div padding>
         <button ion-button color="primary" round >{{ 'SIGNUP_BUTTON' | translate }}</button>
