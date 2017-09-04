@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_taxi_white_24dp"
+        android:title="Taxi"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_bus_white_24dp"
+        android:title="Coaster"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_offers"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_bus_white_24dp"
+        android:title="JUTC"
+        app:showAsAction="ifRoom" />
+</menu>

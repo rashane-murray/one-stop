@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/d93d0f79a5e3ed69d8f24b5a462c9e95b43092ff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_9682df4b85b17dbbd5fdd1808f2ee862f8d90a93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/8536cd2409b9d1f11a929e925a45d0c0241066a8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_2c0ccf8f7873c9466798bee414768169e1f0dcf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/f55e7260e5963d91eccbea4e61e9276554adecc8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_c5a532229323b4d7026a301a199d200661b4deb5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/stone/Documents/Development/OneStop/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5fcea64deb0186f42876e707dcb35467031d971f">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_141f9f4ebfe47ffb2183f78e05e073935f195225/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/stone/Documents/Development/OneStop/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_294ad432027cc7f017e8203238a6f06c3890f4fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/f9e6c0dd347a09c77b294e6f5589fb8b82c76b5e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_109cb679fd11faa4870e4167102df5939bcfc503.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/4b1da127469899710935bb98ac9720a3c688de99/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="70ddab48594608953b20164b82f1f890a9a8174a">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_4a5b9e0d712cda8b8842d5f9f1cca715facab595.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/51d77752678bf0ad3157c84d93effeea37099ab3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_c9b529fdb351d843b6ebf0582f90d2b90211e822.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/b312569a207477d2aa75b9cc28becaa2a3446f94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_9293f4593cb9be758e9b091633060ec241390cdd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/8769bbcfe5141e94e2b5cf1982ecc3f88bb1b00e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_84dc9469b5029467c01192cc1f2de15f993fd7d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/29c9635f4becedcdd97b171005b041b26ee93379/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_d3402a092714382a4065134c8ef7107cf2bda9ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/be638217ffe4a98378451e7bccf702700440f05c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_e735424138744a193b059f689ed01bb53a6a2581.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/430796f2448cb9476b13060bc7b11d955f9bb2f3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_163d76e56a1a6d7d97e621de3bb44470df7aa965.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/59059669e855baf5d7408aeb4e81dec076515239/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_815588cba5533f529e0025c154fdbddcbe38c263.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/8c3797cf6de7db4cebb71a9d59a2a3d6e5c03621/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_dd1ea03478568821522dd418791a447bda5df917.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/d260dca48d6c6f88ee7b174fd28bb32830b35268/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_41deedc805fbe59c28cac21576b6a1db26a02231.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/b1b98d031438d0b1c39371200867fc63759e8f55/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_9c4b1cc0d51e13c33973b5f5b873509290bebb18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/a916f00e4130e07cce6cc4a12e7ea935b97d638a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_681d4f485a25f2fb6089745cbfeec4010de46b33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/2d1f2baf24c5f3941a8c165ff2d7a4b18a202631/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_fc7b9a6c0e2ec1b75055a18615de7c80c38a02fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/d9eb537b6da10b0234fe181c22424c4aec44606e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_6415ab3c63b4fc4d7f510220c3e01e4bcf72b670.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/8dae693b71096db59fb50fb1df8097f5d8d9701b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_408e8e3c523513699683cd5e25d8c86f6a339d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/b5c2614c8dabc9e2a34fa2b9e962c8755ba66c58/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_ce311291afba6bac8213309f78f31308273d5061.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/d0018ffaafcc09331b42662b5a4910fad3017c9f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_c2e6b84cc77f272bcfc4a6291ded50b3b1271c48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/3cafd85d6b388c928017896b386b74961a41ca50/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_af5600196174c2b96bdbdcdebfdab113ee61caa3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/314dc670145716d32079eef25344ed58084bc5fa/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_8e081038c482ce5fb22013a11ce3a55ca75de712.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/52a394c9d19f86c76ff8a197b7fd23bdd5291e00/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_08245976391e13cdf26b52e87a87de1664110ebe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/0b4510c6e8b10b8e559ed46a4b084bee31ce18e1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_4a20142c405b06ebfa5220b33d76bbc272da2f6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/f286a538fcd37ca3a4a63c3c400738a3f13f73d2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_433b6eadd60768c5a6671a0775bd2f6a0fcc8098.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_aaafdefdbbefa7ca85c0dab3d305d8522c385084.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/7731f002acaf0314d50d57201c54dc62811d6cdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_c0618da60db25bbd975a575e7352e3d126cf82a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/stone/.android/build-cache/5b8751ec811c6fab66d2103d2b44ee973b306bc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/home/stone/Documents/Development/OneStop/app/build/intermediates/pre-dexed/debug/classes_55fd45d717c327c11aa639ca0ba47144d1eebad0.jar" />
+    </item>
+
+</items>

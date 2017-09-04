@@ -1,8 +1,0 @@
-{
-  "name": "one-stop",
-  "app_id": "7e8f7baf",
-  "type": "ionic-angular",
-  "integrations": {
-    "cordova": {}
-  }
-}
